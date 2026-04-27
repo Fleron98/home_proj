@@ -15,8 +15,7 @@ def login():
 
 @app.route("/hello")
 def hello():
-    name = request.args.get("name", "Flask")
-    return f"Hello, {escape(name)}!"
+    return f"Hello,!"
 
 @app.route('/user/<username>')
 def profile(username):
